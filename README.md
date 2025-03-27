@@ -1,2 +1,2 @@
 # Airline-Ticketing
-An native app for ticketing airline.
+A native app for ticketing airline.
