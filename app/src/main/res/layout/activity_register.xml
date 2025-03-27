@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--线性布局  LinearLayout 根布局-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background">
+    <!--标题栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_border_bottom">
+        <com.example.airlineticketing.widget.ActionBar
+            android:id="@+id/myActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--表单布局-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_logo"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="欢迎注册"
+                android:textColor="@color/colorBlack"
+                android:textSize="30dp">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundcorner"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:orientation="horizontal">
+                <!--TextView 文本  html的p标签-->
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="账号"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/et_account"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:textSize="14dp"
+                    android:singleLine="true"
+                    android:hint="请输入账号" />
+            </LinearLayout>
+            <!--昵称-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundcorner"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:orientation="horizontal">
+                <!--TextView 文本  html的p标签-->
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="昵称"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/et_nickName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:textSize="14dp"
+                    android:singleLine="true"
+                    android:hint="请输入昵称" />
+            </LinearLayout>
+            <!--年龄-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundcorner"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:orientation="horizontal">
+                <!--TextView 文本  html的p标签-->
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="手机号"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/et_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:textSize="14dp"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:hint="请输入手机号" />
+            </LinearLayout>
+            <!--邮箱-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundcorner"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:orientation="horizontal">
+                <!--TextView 文本  html的p标签-->
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="地址"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:textSize="14dp"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:hint="请输入地址" />
+            </LinearLayout>
+            <!--密码-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundcorner"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textSize="14dp"
+                    android:text="密码"/>
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:background="@null"
+                    android:textSize="14dp"
+                    android:singleLine="true"
+                    android:hint="请输入密码"/>
+            </LinearLayout>
+            <!--确认密码-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundcorner"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textSize="14dp"
+                    android:text="确认密码"/>
+                <EditText
+                    android:id="@+id/et_password_sure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:background="@null"
+                    android:textSize="14dp"
+                    android:singleLine="true"
+                    android:hint="请输入密码"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/colorBlack"
+                android:text="马上登录"/>
+            <!--注册按钮-->
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_border_fill"
+                android:textColor="@color/colorWhite"
+                android:textSize="22dp"
+                android:textAllCaps="false"
+                android:text="注 册"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

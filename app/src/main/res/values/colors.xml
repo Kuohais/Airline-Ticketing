@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008EFF</color><!--主题色-->
+    <color name="colorPrimaryBlue">#008EFF</color><!--主题色-->
+    <color name="colorPrimaryTint">#008EFF</color><!--主题浅色-->
+    <color name="colorPrimaryDark">#008EFF</color><!--主题深色-->
+    <color name="colorAccent">#008EFF</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorYellow">#FF9800</color>
+    <color name="colorGreen">#3C9C44</color>
+    <color name="colorBlack">#000000</color><!--黑色-->
+    <color name="colorWhite">#ffffff</color><!--白色-->
+    <color name="colorGrayDark">#BCB7B7</color><!--深灰色-->
+    <color name="colorGray">#cccccc</color><!--灰色-->
+    <color name="colorGrayTint">#52CCCCCC</color><!--浅灰色-->
+    <color name="colorGrayTints">#2DCCCCCC</color><!--更浅的灰色-->
+</resources>

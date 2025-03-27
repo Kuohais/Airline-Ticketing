@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type">
+        <item >空客飞机</item>
+        <item >波音飞机</item>
+        <item >其他飞机</item>
+    </string-array>
+</resources>
